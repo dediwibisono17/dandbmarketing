@@ -1,0 +1,106 @@
+.about {
+    background: #111;
+    .bg {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: auto;
+        opacity: .07;
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, #111, rgba(#111,.5),#111);
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    h2 {
+        font-size: 3rem;
+        color: $blue;
+        @media screen and (max-width:766px) {
+            font-size: 2.5rem;
+        }
+    }
+    h3 {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: #d8ba72;
+    }
+    p {
+        color: #ccc;
+        // font-size: 1rem;
+    }
+    .cardx {
+        position: relative;
+        height: 360px;
+        margin-bottom: 16px;
+        border-radius: 16px;
+        // box-shadow: 2px 3px 4px #333;
+       &::before {
+            position: absolute;
+            content: "";
+            z-index: 2;
+            inset: 0;
+            border-radius: 16px;
+            background: linear-gradient(to top, black, transparent);
+        }
+        .img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 16px;
+            img {
+                width: 100%;
+                border-radius: 16px;
+                height: 100%;
+                object-fit: cover;
+            }
+
+        }
+        .content {
+            position: absolute;
+            left: 8px;
+            bottom: 8px;
+            z-index: 8;
+        }
+    }
+
+    .slick-about {
+        .data {
+            // border: 2px dashed;
+            padding: 12px;
+            &__title {
+                font-size: 1.8rem;
+                color: $blue;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .slick {
+        &-slide {
+            margin: 0 16px;
+        }
+        &-list {
+            margin: 0 -16px;
+        }
+        &-next,
+        &-prev {
+            // border: 2px solid rgba(255, 255, 255, 0.5);
+            width: 42px;
+            // background: rgba(#d8ba72, .6);
+            backdrop-filter: blur(2px);
+            height: 42px;
+            border-radius: 50%;
+            @media screen and (max-width:766px) {
+                top: 100%;
+            }
+        }
+    }
+}
