@@ -19,7 +19,7 @@
         &:hover,
         &:focus,
         &:active {
-            background: rgba(#d8ba72, .2);
+            background: rgba($blue, .2);
         }
         &::before {
             font-family: "FontAwesome";
