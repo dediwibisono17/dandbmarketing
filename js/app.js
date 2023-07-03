@@ -1,7 +1,7 @@
 $(".slick-banner").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     // arrows: false,
     autoplaySpeed: 2000,
     fade: true
