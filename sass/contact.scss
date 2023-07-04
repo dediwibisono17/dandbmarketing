@@ -42,9 +42,9 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $darkblue, rgba($darkblue,.8),$darkblue);
+            background: linear-gradient(to top, #111, rgba(#111,.9),#111);
             @media screen and (max-width:766px) {
-                background: linear-gradient(to top, $darkblue, rgba($darkblue,.7),$darkblue);
+                background: linear-gradient(to top, #111, rgba(#111,.7),#111);
             }
         }
         img {
