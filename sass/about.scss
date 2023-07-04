@@ -104,3 +104,37 @@
         }
     }
 }
+
+.who {
+    .slick-about {
+        .data {
+            // border: 2px dashed;
+            padding: 12px;
+            // border-bottom: 1px dashed #aaa;
+            margin: 0 auto;
+            &__title {
+                display: inline-block;
+                
+                color: $blue;
+                font-weight: 500;
+                width: 30%;
+                font-size: 2.1rem;
+                @media screen and (max-width:766px) {
+                    font-size: 1.8rem;
+                    width: 100%;
+                    
+                }
+            }
+            p {
+                display: inline-block;
+                width: 65%;
+                margin-left: 16px;
+                vertical-align: middle;
+                @media screen and (max-width:766px) {
+                    width: 100%;
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}
