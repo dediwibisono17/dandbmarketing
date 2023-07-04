@@ -3,7 +3,20 @@
     left: 0;
     right: 0;
     bottom: 0;
-    z-index: -1;
+    z-index: 1;
+    .btn-primary {
+        margin-top: 16px;
+        background: #ececec !important;
+        color: #111;
+        border-radius: 16px;
+        border-color: transparent;
+        font-weight: 700;
+        font-size: .875rem;
+        transition: .3s;
+        &:hover {
+            background: #8b8b8b !important;
+        }
+    }
     .cops {
         position: absolute;
         bottom: 0;
