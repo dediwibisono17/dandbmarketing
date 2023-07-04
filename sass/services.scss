@@ -40,6 +40,9 @@
         // border: 2px solid white;
         text-align: center;
         position: relative;
+        @media screen and (max-width:766px) {
+            // height: 130px;
+        }
         .img {
             position: absolute;
             inset: 0;
@@ -70,6 +73,7 @@
             transform: translate(-50%,-50%);
             h4 {
                 font-size: 1.3rem;
+                text-shadow: 2px 2px black;
             }
         }
     }
