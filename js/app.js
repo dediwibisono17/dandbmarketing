@@ -63,3 +63,13 @@ $(document).ready(function() {
         $(this).addClass("active");
     });
 });
+
+var date = new Date().getFullYear();
+
+console.log(date);
+
+$(".cops").append(
+  `
+  &copy; ${date} All Rights Reserved
+  `
+)
