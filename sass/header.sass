@@ -28,10 +28,10 @@ header
     .navbar-light
         .nav-link
             &.active
-                color: #d8ba72 !important
+                color: $blue !important
                 font-weight: bold
                 @media screen and (max-width:$max)
-                    color: #d8ba72 !important
+                    color: $blue !important
         .navbar-nav
             .nav-link
                 color: #fff
@@ -39,7 +39,7 @@ header
                 // text-shadow: 2px 2px black
                 font-size: 1rem
                 &:hover
-                    color: #d8ba72
+                    color: $blue
                 @media screen and (max-width:$max)
                     color: #fff
                     font-size: 1.45rem
@@ -75,14 +75,14 @@ header
     position: absolute
 .navbar-brand
     position: fixed
-    width: 51px
+    width: 100px
     overflow: hidden
     height: auto
     top: 3px
 
     @media screen and ( max-width: 766px )
-        width: 56px
-        display: none
+        width: 80px
+        // display: none
         right: 0
 header
     position: fixed
@@ -293,3 +293,8 @@ header
     display: none
     @media screen and (max-width:$max)
         display: block
+        font-family: 'Kanit', sans-serif !important
+        color: white
+        position: absolute
+        left: 11%
+        bottom: 15vh

@@ -1,6 +1,41 @@
 .contact {
-    position: relative;
-    z-index: 44;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    .btn-primary {
+        margin-top: 16px;
+        background: #ececec !important;
+        color: #111;
+        border-radius: 16px;
+        border-color: transparent;
+        font-weight: 700;
+        font-size: .875rem;
+        transition: .3s;
+        &:hover {
+            background: #8b8b8b !important;
+        }
+    }
+    .cops {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        bottom: 5%;
+        width: 80%;
+        transform: translate(-50%,0);
+        .img {
+            width: 140px;
+            margin: 0 auto;
+            height: auto;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    
+    }
     h2 {
         font-size: 3rem;
         color: $blue;
@@ -42,9 +77,9 @@
             content: "";
             position: absolute;
             inset: 0;
-            background: linear-gradient(to top, $darkblue, rgba($darkblue,.8),$darkblue);
+            background: linear-gradient(to top, #111, rgba(#111,.9),#111);
             @media screen and (max-width:766px) {
-                background: linear-gradient(to top, $darkblue, rgba($darkblue,.7),$darkblue);
+                background: linear-gradient(to top, #111, rgba(#111,.7),#111);
             }
         }
         img {

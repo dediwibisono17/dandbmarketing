@@ -11,12 +11,53 @@
         font-family: 'DM Serif Display', sans-serif;
         font-size: 1.5rem;
         font-weight: 400;
-        color: #d8ba72;
+        color: $blue;
     }
     blockquote {
         // font-family: 'DM Serif Display', serif;
         // font-size: 2.3rem;
         // line-height: 2.6rem;
+        position: relative;
+        .quotes {
+            position: absolute;
+            left: -8px;
+            top: -26px;
+            width: 100px;
+            height: auto;
+            z-index: 5;
+            opacity: .06;
+            transform: rotate(180deg);
+            &.rights {
+                left: initial !important;
+                right: 8px;
+                top: initial;
+                bottom: 0;
+            }
+            @media screen and (max-width:766px) {
+                top: -36px;
+                opacity: .1;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        .padd {
+            padding: 16px;
+            @media screen and (max-width:766px) {
+                padding: 16px 8px;
+            }
+        }
+        p {
+            color: #e2e2e2;
+            position: relative;
+            z-index: 9;
+            font-size: 1.1rem;
+            @media screen and (max-width:766px) {
+                font-size: 1rem;
+            }
+        }
     }
     .img {
         width: 150px;

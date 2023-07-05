@@ -1,7 +1,7 @@
 .about {
     background: #111;
     .bg {
-        position: fixed;
+        position: absolute;
         inset: 0;
         width: 100%;
         height: auto;
@@ -29,7 +29,7 @@
         font-family: 'Montserrat', sans-serif;
         font-size: 1.4rem;
         font-weight: 400;
-        color: #d8ba72;
+        color: $blue;
     }
     p {
         color: #ccc;
@@ -100,6 +100,40 @@
             border-radius: 50%;
             @media screen and (max-width:766px) {
                 top: 100%;
+            }
+        }
+    }
+}
+
+.who {
+    .slick-about {
+        .data {
+            // border: 2px dashed;
+            padding: 12px;
+            // border-bottom: 1px dashed #aaa;
+            margin: 0 auto;
+            &__title {
+                display: inline-block;
+                
+                color: $blue;
+                font-weight: 500;
+                width: 30%;
+                font-size: 2.1rem;
+                @media screen and (max-width:766px) {
+                    font-size: 1.8rem;
+                    width: 100%;
+                    
+                }
+            }
+            p {
+                display: inline-block;
+                width: 65%;
+                margin-left: 16px;
+                vertical-align: middle;
+                @media screen and (max-width:766px) {
+                    width: 100%;
+                    margin-left: 8px;
+                }
             }
         }
     }

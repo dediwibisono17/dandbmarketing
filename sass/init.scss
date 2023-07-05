@@ -72,8 +72,9 @@ section {
     background: $darkblue;
     color: white;
     min-height: 100vh;
+    z-index: 8;
     h2 {
-        font-family: 'Kanit', sans-serif;
+        font-family: 'DM Serif Display', sans-serif;
     }
 }
 
@@ -87,4 +88,16 @@ section {
 main {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+    padding-bottom: 100vh;
+}
+
+.totop {
+    position: relative;
+    z-index: 70;
+}
+
+footer {
+    background: #111;
+    padding: 8px;
+    color: white;
 }
